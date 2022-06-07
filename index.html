@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Web_dev challenge</title>
+</head>
+<body>
+    <nav>
+        <div id="nav-wrapper">
+            <a class="brand-logo" href="#"><img src="./images/LOGO-WDR.png"></a>
+        </div>
+    </nav>
+    <aside id="sidebar">
+        <div class="users-container">
+            <a class="user" href="#">John</a>
+            <a class="user" href="#">Burt</a>
+            <a class="user" href="#">Janine</a>
+            <a class="user" href="#">Anna</a>
+        </div>
+        <div class="aside-footer">
+            <p>2019 &reg; Premium-minds.com</p>
+        </div>
+    </aside>
+    <div class="form-container">
+        <span class="form-user">
+            Utilizador
+        </span>
+        <span class="form-user-type">
+            <button type="button" class="collapsible">Tipo Utilizador</button>
+                <div class="content">
+                    <form action="action_page">
+                        <input type="checkbox" id="project-manager" name="project-manager" value="project-manager">
+                        <label for="project-manager"> Project Manager</label><br>
+                        <input type="checkbox" id="developer" name="developer" value="developer">
+                        <label for="developer"> Developer</label><br>
+                        <input type="checkbox" id="comercial" name="comercial" value="comercial">
+                        <label for="comercial"> Comercial</label><br><br>
+                    </form> 
+                </div>
+        </span>
+        <span class="form-user-contact">
+            <button type="button" class="collapsible">Contacto</button>
+                <div class="content">
+                    <form class="form-inline">
+                        <div class="form-label">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email">
+                        </div>
+                        <div class="form-label">
+                            <label id="form-label-password" for="pwd">Palavra-Passe:</label><br>
+                            <input type="password" id="pwd" name="pwd">
+                        </div>
+                        <div class="form-label">
+                            <label for="phone">Telefone:</label>
+                            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+                        </div>
+                      </form>
+                </div>
+        </span>
+        <span class="button-container">
+            <button id="cancel-button" type="button">Cancelar</button>
+            <button id="save-button" type="button">Guardar</button>
+        </span>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
